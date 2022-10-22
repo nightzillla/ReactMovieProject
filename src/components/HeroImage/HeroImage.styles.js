@@ -24,8 +24,38 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
+    padding: 20px;
+    max-width: let(--maxWidth);
+    margin: 0 auto;
 `;
 
 export const Text = styled.div`
+    z-index: 100;
+    max-width: 700px;
+    position: absolute;
+    bottom: 40px;
+    margin-right: 20px;
+    min-height: 100px;
+    color: let(--white);
+
+    h1{
+        font-size: let(--fontSuperBig)
+
+        @media screen and (max-width: 720px) {
+            font-size let(--fontBig);
+        }
+    }
+
+    p {
+        font-size: let(--fontMed);
+
+        @media screen and (max-width: 720px) {
+            font-size: let(--fontSmall);
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        font-size: let(--fontSmall);
+    }
 `;
 
