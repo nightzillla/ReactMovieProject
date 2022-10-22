@@ -6,3 +6,4 @@ useEffect - use to grab data from an API, and it's a side effect. So we're going
 useContext - used for movie database login  
 
 ... means spread out result 
+<> </> this is called a fragment shorthand
