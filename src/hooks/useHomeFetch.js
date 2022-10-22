@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 // API
 import API from '../API';
 
+// This is the initial state of your component. This is where you API information goes into after the API request is finished
 const initialState = {
     page: 0,
     results: [],
@@ -12,7 +13,7 @@ const initialState = {
 }
 
 export const useHomeFetch = () => {
-    const [state, setState] = useState();
+    const [state, setState] = useState(initialState);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
 
