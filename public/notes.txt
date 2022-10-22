@@ -1,0 +1,6 @@
+Basic Hooks
+useState - use for creating state in a functional component in react.
+
+useEffect - use to grab data from an API, and it's a side effect. So we're going to use the useEffect hook for grabbing data and then we're going to useState to keep that data.
+
+useContext - used for movie database login
