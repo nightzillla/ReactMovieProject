@@ -1,6 +1,6 @@
 import React from 'react';
 
-import RMDBLogo from '../../images/react-movie-logo.svg';
+import BroMovie from '../../images/Bros-Movies.png';
 import TMDBLogo from '../../images/tmdb_logo.svg';
 
 import { Wrapper, Content, LogoImg, TMDBLogoImg } from './Header.style';
@@ -11,8 +11,8 @@ import { Wrapper, Content, LogoImg, TMDBLogoImg } from './Header.style';
 const Header = () => (
     <Wrapper>
         <Content>
-            <LogoImg src={RMDBLogo} alt='rmdb-logo'/>
-            <TMDBLogoImg src={TMDBLogo} alt='tmdb-logo'/>
+            <LogoImg src={BroMovie} alt='broMovie-logo'/>
+            {/* <TMDBLogoImg src={TMDBLogo} alt='tmdb-logo'/> */}
         </Content>
     </Wrapper>
 );

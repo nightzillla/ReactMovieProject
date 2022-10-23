@@ -7,26 +7,29 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
     display: flex;
-    alight-items: center;
+    align-items: center;
     justify-content: space-between;
     max-width: var(--maxWidth);
-    padding: 20px 0;
+    padding: 1px 0;
     margin: 0 auto;
 `;
 
 export const LogoImg = styled.img`
-    width: 200px;
+    width: 500px;
+    margin-left: 300px;
 
     @media screen and (max-width: 500px) {
-        width: 150px;
+        width: 300px;
+        margin-left: 100px;
+
     }
 `;
 
-export const TMDBLogoImg = styled.img`
-    width: 100px;
+// export const TMDBLogoImg = styled.img`
+//     width: 100px;
 
-    @media screen and (max-width: 500px){
-        width: 80px;
-    }
-`;
+//     @media screen and (max-width: 500px){
+//         width: 80px;
+//     }
+// `;
 
