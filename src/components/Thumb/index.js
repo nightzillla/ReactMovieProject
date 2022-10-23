@@ -8,4 +8,4 @@ const Thumb = ({ image, movieId, clickable }) => (
     </div> 
 );
 
-export default Thumb;
+export default Thumb; 
