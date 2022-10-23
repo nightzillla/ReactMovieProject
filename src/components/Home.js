@@ -15,12 +15,16 @@ import { useHomeFetch } from '../hooks/useHomeFetch';
 import NoImage from '../images/no_image.jpg';
 
 const Home = () => {
-    const { state, loading , error, setSearchTerm } = useHomeFetch();
+    const { state, loading , error, searchTerm, setSearchTerm } = useHomeFetch();
  
 
     return(
         <>
-        {/* this will not load heroImage when making a new search !searchTerm */}
+
+        {/* this will not load heroImage when making a new search !searchTerm 
+        use this if you dont want to show newsearch heroImage when searching 
+        {!searchTerm && state.results[0] ?}
+        */}
         {state.results[0] ? (
         <HeroImage 
             image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
@@ -29,8 +33,10 @@ const Home = () => {
         /> 
         ): null} 
         <SearchBar setSearchTerm={setSearchTerm}/>
-        {/* .map gets the movie titles  */}
-        <Grid header='Popular Movies'>
+        {/* .map gets the movie titles  
+        added searchTerm will change from popular movies when making a new search
+        */}
+        <Grid header={searchTerm ? 'Search Result' :'Popular Movies'}>
            {state.results.map(movie => (
             <Thumb
                 key={movie.id}

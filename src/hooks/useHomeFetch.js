@@ -38,7 +38,7 @@ export const useHomeFetch = () => {
     };
 
     // Initial and search
-    useEffect(() => {
+    useEffect(() => { 
     // this will clear the search
      setState(initialState);
     // this search the first page
