@@ -19,13 +19,13 @@ export const Wrapper = styled.div`
         }
         to {
             opacity: 1;
-        }
+        } 
       }
 `;
 
 export const Content = styled.div`
     padding: 20px;
-    max-width: let(--maxWidth);
+    max-width: var(--maxWidth);
     margin: 0 auto;
 `;
 
@@ -33,10 +33,10 @@ export const Text = styled.div`
     z-index: 100;
     max-width: 700px;
     position: absolute;
-    margin-top: 400px;
+    margin-top: 40px;
     margin-right: 20px;
     min-height: 100px;
-    color: let(--white);
+    color: var(--white);
 
     h1{
         font-size: var(--fontSuperBig);

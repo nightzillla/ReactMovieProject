@@ -2,7 +2,7 @@ import React from 'react';
 //Styles
 import { Wrapper, Content, Text } from './HeroImage.styles';
 
-const HeroImage = ({ image, title, text}) => (
+const HeroImage = ({ image, title, text }) => (
     <Wrapper image={image}>
         <Content>
             <Text>

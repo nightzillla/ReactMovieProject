@@ -20,10 +20,11 @@ const Home = () => {
 
     return(
         <>
+        {/* this will not load heroImage when making a new search !searchTerm */}
         {state.results[0] ? (
         <HeroImage 
             image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
-            title={state.results[0].orginal_title}
+            title={state.results[0].title}
             text={state.results[0].overview}
         /> 
         ): null} 
