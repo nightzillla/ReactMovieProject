@@ -33,7 +33,7 @@ export const Text = styled.div`
     z-index: 100;
     max-width: 700px;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 400px;
     margin-right: 20px;
     min-height: 100px;
     color: var(--white);
