@@ -17,6 +17,7 @@ export const Content = styled.div`
     margin: 0 auto;
     border-radius: 40px;
     color: var(--white); 
+    
     // img has to be absolute to relative
     img {
         position: absolute;
