@@ -39,23 +39,23 @@ export const Text = styled.div`
     color: let(--white);
 
     h1{
-        font-size: let(--fontSuperBig)
+        font-size: var(--fontSuperBig);
 
         @media screen and (max-width: 720px) {
-            font-size let(--fontBig);
+            font-size: var(--fontBig);
         }
     }
 
     p {
-        font-size: let(--fontMed);
+        font-size: var(--fontMed);
 
         @media screen and (max-width: 720px) {
-            font-size: let(--fontSmall);
+            font-size: var(--fontSmall);
         }
     }
 
     @media screen and (max-width: 720px) {
-        font-size: let(--fontSmall);
+        font-size: var(--fontSmall); 
     }
 `;
 
